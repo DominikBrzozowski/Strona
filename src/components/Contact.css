@@ -1,0 +1,68 @@
+.contact-form-container {
+  background: rgba(0, 0, 0, 0.5); /* Czarny z przezroczystością 50% */
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  width: 100%;
+  max-width: 500px; /* Adjust this width as needed */
+  margin: 20px auto; /* Center the form on the page */
+}
+
+.contact-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact-form .form-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%; /* Make sure each form group is full width */
+}
+
+.contact-form .form-group label {
+  margin-bottom: 5px;
+  text-align: left; /* Align text to the left */
+  width: 100%; /* Full width */
+}
+
+.contact-form .form-group input,
+.contact-form .form-group textarea {
+  width: 500px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  resize: none; /* Include padding and border in the element's total width and height */
+}
+
+.contact-form .form-group input::placeholder,
+.contact-form .form-group textarea::placeholder {
+  color: #aaa;
+}
+
+.contact-form button {
+  padding: 10px 15px;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%; /* Full width */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.contact-form button:hover {
+  background-color: #0056b3;
+}
+
+.submission-message {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #4caf50; /* Success color */
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  display: none; /* Hide by default */
+}

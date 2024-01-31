@@ -1,0 +1,131 @@
+/* ProjectDetails.css */
+
+.project-details {
+    font-family: 'Arial', sans-serif;
+    display: inline-block; /* zachowuje tytuł w bloku, który może być wyśrodkowany */
+    margin: 10px 0;
+    text-align: center;
+  }
+  
+  .loading-text {
+    color: #666;
+    font-style: italic;
+  }
+  
+  .api-section {
+    text-align: center; /* dodaje wyśrodkowanie tekstu dla tytułów */
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+  
+  .api-section-title {
+    display: inline-block; /* zachowuje tytuł w bloku, który może być wyśrodkowany */
+    margin: 10px 0; /* automatyczne marginesy wyśrodkują blok poziomo */
+    padding: 5px;
+    background-color: #000000;
+    border-radius: 5px;
+    font-weight: bold;
+    user-select: none;
+  }
+
+  .api-section-apod {
+    text-align: center; /* dodaje wyśrodkowanie tekstu dla tytułów */
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+  
+  .api-section-title-apod {
+    display: inline-block; /* zachowuje tytuł w bloku, który może być wyśrodkowany */
+    margin: 10px 0; /* automatyczne marginesy wyśrodkują blok poziomo */
+    padding: 5px;
+    background-color: #000000;
+    border-radius: 5px;
+    font-weight: bold;
+    user-select: none;
+  }
+  
+  .api-section-content {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .api-section-content p {
+    margin: 10px 0;
+    color: #fff;
+  }
+  
+  .api-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .api-list-item {
+    margin: 10px 0;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+  }
+  
+  .api-list-item strong {
+    color: #000;
+  }
+  
+  .no-data-text {
+    color: #900;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .apod-container {
+    display: flex;
+    justify-content: space-around; /* wyśrodkuje dzieci w poziomie */
+    align-items: center;
+    max-width: 80%;
+    margin: 20px auto; /* wyśrodkuje kontener poziomo i doda marginesy wertykalne */
+    gap: 20px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* bardziej przezroczyste tło */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* zapobiega wydostawaniu się zawartości poza zaokrąglenia */
+  }
+  
+  .apod-image {
+    width: 50%; /* dostosuj według potrzeb, aby obraz był mniejszy */
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* doda cień dla obrazka */
+  }
+  
+  .apod-description {
+    width: 50%; /* dostosuj szerokość opisu do połowy kontenera */
+    color: #fff; /* kolor szary dla tekstu */
+    text-align: justify; /* wyjustuj tekst */
+    padding: 0 20px; /* doda padding do tekstu */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .apod-container {
+      flex-direction: column;
+      max-width: 100%; /* full width on smaller screens */
+    }
+  
+    .apod-image,
+    .apod-description {
+      width: 100%; /* full width for both image and text on smaller screens */
+      padding: 0; /* remove padding on smaller screens */
+    }
+  }
+  
